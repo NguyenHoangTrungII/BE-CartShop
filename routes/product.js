@@ -6,6 +6,6 @@ const router = express.Router();
 router.get("/", productController.getAllProduct);
 
 //SET IN CART STATUS
-router.get("/setStatus", productController.setInCartStatus);
+router.patch("/setStatus", productController.setInCartStatus);
 
 module.exports = router;
