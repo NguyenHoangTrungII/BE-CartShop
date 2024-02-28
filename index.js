@@ -7,7 +7,6 @@ const dotenv = require("dotenv");
 const cookieParser = require("cookie-parser");
 
 const productRoute = require("./routes/product");
-const cartRouter = require("./routes/cart");
 
 dotenv.config();
 
@@ -33,4 +32,3 @@ startServer();
 
 //ROUTES
 app.use("/v1/product", productRoute);
-app.use("/v1/cart", cartRouter);
